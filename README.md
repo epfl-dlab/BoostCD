@@ -1,9 +1,9 @@
-# BoostIE
+# BoostCD
 
 ## 1. Setup
 Start by cloning the repository:
 ```bash
-git clone https://github.com/epfl-dlab/BoostIE.git
+git clone https://github.com/epfl-dlab/BoostCD.git
 ```
 
 We recommend creating a new [conda](https://docs.conda.io/en/latest/) virtual environment as follows:
@@ -42,4 +42,18 @@ To compute the micro and macro performance, as well as the performance bucketed 
 
 ```
 python src/genie/run_process_predictions.py +experiment/process_predictions=complete_boostie wandb_run_path=$WANDB_PATH
+```
+
+### Citation
+If you found our resources useful, please consider citing our work.
+```
+@misc{šakota2025combiningconstrainedunconstraineddecoding,
+      title={Combining Constrained and Unconstrained Decoding via Boosting: BoostCD and Its Application to Information Extraction}, 
+      author={Marija Šakota and Robert West},
+      year={2025},
+      eprint={2506.14901},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2506.14901}, 
+}
 ```
