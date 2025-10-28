@@ -1,0 +1,16 @@
+defaults:
+  - _default
+
+name: "sdg_code_davinci_002"
+_target_: src.datamodules.IEGenericDataModule
+batch_size: 4
+num_workers: 12
+
+dataset_target_: src.datamodules.IEGenericDataset
+data_dir: ${data_dir}/synthie_400k_data
+
+filter_on_num_tokens: True
+apply_ordering_heuristic: True
+gzipped: False
+linearization_class_id: fully_expanded
+count_datapoints_with_unk_in_target: False

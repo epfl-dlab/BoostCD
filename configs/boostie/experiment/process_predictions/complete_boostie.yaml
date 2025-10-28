@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - _default
+  - _macro
+  - _bucket_rebel
+  - _bucket_num_target_triplets
+
+mode: "constrained"
+wandb_run_path: null
+filter: "all" # can be "all", "entities_removed" or "entities_same"
+subset: null # path towards a json with ids to keep
+linearization_class_id: fully_expanded
+data_path: ???
+run_name: ???
+
+output_dataset:
+  mode: ${mode}
+  processed: true
+  filter: ${filter}
+  subset: ${subset}
